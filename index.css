@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600&display=swap1");
+
+ * {
+   box-sizing: border-box;
+ }
+
+ .head{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 75px;
+   background-color: rgb(60, 38, 112);
+   padding: 30px 10% ;
+   color : white;
+ }
+ body{
+   background-color: #215688;
+   color: white;
+   font-family: "Poppins",sans-serif;
+   margin: 0;
+ }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.movie-info {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-info h3{
+  margin: 0;
+}
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.button{
+  position: relative;
+  color:#2d316d;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 15px;
+}
+.movie{
+  
+  width: 300px;
+  height: auto;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #22254b;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+.movie-over{
+  position:absolute;
+  background-color: aliceblue;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #22254b;
+  transform: translateY(100%);
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.movie img{
+  max-width : 100%;
+}
+ .movie:hover .movie-over{
+   transform: translateY(0%);
+ }
